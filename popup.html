@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World Extension</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #stored-value {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+    <script src="popup.js"></script>
+</head>
+
+<body>
+    <h1>Hello World Extension</h1>
+    <button id="hello-btn">Stored Value</button>
+    <div id="loading" style="display: none;">Loading...</div>
+    <div id="stored-value"></div>
+    <button id="clear-btn">Clear Value</button>
+</body>
+
+</html>
